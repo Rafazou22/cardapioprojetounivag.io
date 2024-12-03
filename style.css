@@ -1,0 +1,160 @@
+/* Reset básico */
+body, h1, h2, p, div, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* no underline */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.5;
+}
+
+header {
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant-name {
+    font-size: 24px;
+    align-self: center;
+}
+
+.cart {
+    background-color: #ffc107;
+    color: #343a40;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin-top: 10px;
+    text-align-last: center;
+}
+.search-bar-input {
+    border-style: none;
+    border-bottom: 2px solid black;
+}
+input[type="search"] {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.menu {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+    background-color: #dee2e6;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.item-details {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.secao-filtros {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secao-filtros-nome {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgb(116, 116, 116);
+    border-left: 1px solid rgb(116, 116, 116);
+}
+
+.item-description-comida {
+    background-color: red;
+    border-radius: 60px;
+    font-size: small;
+    color: white;
+}
+
+.item-description-bebida {
+    background-color: rgb(41, 145, 0);
+    border-radius: 60px;
+    font-size: small;
+    color: white;
+}
+.item-description-doce {
+    background-color: rgb(98, 0, 255);
+    border-radius: 60px;
+    font-size: small;
+    color: white;
+}
+
+.ajuste {
+    text-align: center;
+    width: 40%;
+}
